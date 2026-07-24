@@ -20,7 +20,7 @@ Machine Learning is 80% cleaning data and 20% actually doing the cool stuff. Her
 * **Faking the Fuel Data:** F1 teams do not broadcast live fuel weights to the public. To get around this, I engineered a feature using `LapNumber` as a proxy. Since fuel burn is linear, I banked on the XGBoost decision trees being smart enough to deduce the weight reduction mathematically. (Spoiler: It worked).
 
 ## 📊 What I Found Out
-* **Accuracy:** The model achieved a Mean Absolute Error (MAE) of **[Insert your MAE here]** seconds. In a chaotic sport with lockups, wind gusts, and dirty air from traffic, predicting a lap time to within fractions of a second using just 5 variables blew my mind.
+* **Accuracy:** The model achieved a Mean Absolute Error (MAE) of 0.334 seconds. In a chaotic sport with lockups, wind gusts, and dirty air from traffic, predicting a lap time to within fractions of a second using just 5 variables blew my mind.
 * **The Feature Proof:** I ran a Feature Importance check, and `LapNumber` (Fuel) and `TyreLife` (Degradation) absolutely dominated the charts. The model successfully learned the crossover effect.
 * **Unbiased Errors:** My residual analysis plotted a beautiful, normal bell curve centered at zero. The model isn't biased; its only major misses are unpredictable track anomalies.
 
